@@ -19,9 +19,7 @@ class InputButton extends React.Component {
 
 	onSearch = () => {
 		const {inputText} = this.state;
-		if(inputText.trim().length>0) {
-			this.props.onSearch(inputText.trim());
-		}
+		this.props.onSearch(inputText.trim());
 	}
 
 	render() {
